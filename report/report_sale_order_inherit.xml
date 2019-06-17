@@ -42,8 +42,11 @@
 
     <tbody>
 		<t t-foreach="doc.order_line" t-as="l">
-			<th>Prix</th>
-			<td t-field="l.price_unit"/>
+			<th>Population</th>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
 		</t>
     </tbody>
 </table>
