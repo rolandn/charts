@@ -44,7 +44,7 @@
 
     <tbody>
 		<t t-foreach="doc.order_line" t-as="l">
-			<td t-field="l.price_unit"/>
+			<th t-field="l.price_unit"/>
 		</t>
     </tbody>
 </table>
