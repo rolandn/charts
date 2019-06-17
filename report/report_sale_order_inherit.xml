@@ -33,13 +33,9 @@
 				<div id="container" style="min-width: 610px; height: 700px; margin: 0 auto"></div>
 
 <table id="datatable">
-    <tr><th><td>légende</td></th></tr>
-	<tr><th><td>2</td></th></tr>
-	<tr><th><td>5</td></th></tr>
-	<tr><th><td>4</td></th></tr>
-	<tr><th><td>2</td></th></tr>
-	<tr><th><td>5</td></th></tr>
-	<tr><th><td>4</td></th></tr>
+    <tr><th><td>Prix unitaire</td></th></tr>
+	<tr><th  t-foreach="doc.order_line" t-as="l"><td> <span t-field="l.price_unit"/></td></th></tr>
+
 </table>
 			</div>
 		</div>
