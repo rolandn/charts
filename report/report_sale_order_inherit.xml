@@ -43,9 +43,9 @@
     </thead>
 
     <tbody>
-		<t t-foreach="doc.order_line" t-as="l">
+		<t >
         <tr  t-if="l.product_uom_qty">
-			<th>Prix</th>
+			<th t-foreach="doc.order_line" t-as="l">Prix</th>
             	<td >
 					<span t-field="l.price_unit"/>
 				</td>
