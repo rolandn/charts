@@ -36,18 +36,16 @@
 
 	 <thead>
         <tr>
-            <th></th>
-            <th>Roland</th>
-            <th>Will</th>
+
+            <th><span t-field="l.price_unit"/></th>
+
         </tr>
     </thead>
 
     <tbody t-foreach="doc.order_line" t-as="l">
-
-
+        <tr  t-if="l.product_uom_qty">
             	<td ><span t-field="l.price_unit"/></td>
-
-
+        </tr>
     </tbody>
 </table>
 			</div>
