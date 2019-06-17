@@ -37,7 +37,7 @@
 	 <thead>
         <tr>
 
-            <th><span t-field="l.price_unit"/></th>
+            <th>Prix</th>
 
         </tr>
     </thead>
