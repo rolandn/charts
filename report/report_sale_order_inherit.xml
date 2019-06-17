@@ -42,8 +42,8 @@
         </tr>
     </thead>
     <tbody>
-        <tr  t-foreach="doc.order_line" t-as="l">
-            <th>Prix unitaire</th>
+        <tr >
+            <th t-foreach="doc.order_line" t-as="l">Prix unitaire</th>
             <td> <span t-field="l.price_unit"/> </td>
 
         </tr>
