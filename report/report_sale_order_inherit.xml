@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+
+        <!-- *********** MODIFICATION DU BON DE COMMANDE FOURNISSEUR POUR AJOUTER LES INFOS SUIVANTES ********   -->
+
+        <template id="report_sale_order_inherit"
+                  inherit_id="sale.report_saleorder_document">
+
+            <xpath expr="//div[@class='page']" position="before">
+
+                <head>
+		<title>
+			Test Hightchats **
+		</title>
+
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com/modules/data.js"></script>
+		<script src="https://code.highcharts.com/modules/exporting.js"></script>
+		<script src="https://code.highcharts.com/modules/export-data.js"></script>
+	</head>
+
+	<body>
+
+		<div class="container">
+			<div class="row">
+				<div id="container" style="min-width: 610px; height: 700px; margin: 0 auto"></div>
+
+<table id="datatable">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Roland</th>
+            <th>Will</th>
+            <th>Bob</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Apples</th>
+            <td>3</td>
+            <td>4</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th>Pears</th>
+            <td>5</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th>Plums</th>
+            <td>5</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>Bananas</th>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th>Oranges</th>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+    </tbody>
+</table>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			Highcharts.chart('container', {
+			    data: {
+			        table: 'datatable'
+			    },
+			    chart: {
+			        type: 'column'
+			    },
+			    title: {
+			        text: 'Data extracted from a HTML table in the page'
+			    },
+			    yAxis: {
+			        allowDecimals: false,
+			        title: {
+			            text: 'Units'
+			        }
+			    },
+			    tooltip: {
+			        formatter: function () {
+			            return '<b>' + this.series.name + '</b><br/>' +
+			                this.point.y + ' ' + this.point.name.toLowerCase();
+			        }
+			    }
+			});
+		</script>
+
+	</body>
+
+            </xpath>
+
+
+        </template>
+    </data>
+</openerp>
