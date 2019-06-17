@@ -36,9 +36,8 @@
 
     <tbody t-foreach="doc.order_line" t-as="l">
         <tr  t-if="l.product_uom_qty">
-
-            <td><span t-field="l.price_unit"/></td>
-
+			<th>Liste de prix</th>
+            	<td><span t-field="l.price_unit"/></td>
         </tr>
 
 
