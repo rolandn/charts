@@ -46,7 +46,10 @@
 		<t t-foreach="doc.order_line" t-as="l">
         <tr  t-if="l.product_uom_qty">
             	<td >
-					<span t-field="l.price_unit"/>
+					<span>2</span>
+					<span>5</span>
+					<span>7</span>
+
 				</td>
         </tr>
 		</t>
