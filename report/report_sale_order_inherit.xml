@@ -33,42 +33,13 @@
 				<div id="container" style="min-width: 610px; height: 700px; margin: 0 auto"></div>
 
 <table id="datatable">
- <thead>
-        <tr>
-            <th></th>
-            <th>Roland</th>
-            <th>Will</th>
-            <th>Bob</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr >
-            <th>Apples</th>
-            <td>3</td>
-            <td>4</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <th>Pears</th>
-            <td>5</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <th>Plums</th>
-            <td>5</td>
-            <td>9</td>
-        </tr>
-        <tr>
-            <th>Bananas</th>
-            <td>1</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <th>Oranges</th>
-            <td>2</td>
-            <td>2</td>
-        </tr>
-    </tbody>
+    <tr><th><td>légende</td></th></tr>
+	<tr><th><td>2</td></th></tr>
+	<tr><th><td>5</td></th></tr>
+	<tr><th><td>4</td></th></tr>
+	<tr><th><td>2</td></th></tr>
+	<tr><th><td>5</td></th></tr>
+	<tr><th><td>4</td></th></tr>
 </table>
 			</div>
 		</div>
