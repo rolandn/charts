@@ -34,6 +34,14 @@
 
 <table id="datatable">
 
+	 <thead>
+        <tr>
+            <th></th>
+            <th>Roland</th>
+            <th>Will</th>
+        </tr>
+    </thead>
+
     <tbody t-foreach="doc.order_line" t-as="l">
         <tr  t-if="l.product_uom_qty">
 			<th>Liste de prix</th>
