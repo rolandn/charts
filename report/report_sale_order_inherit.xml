@@ -34,7 +34,7 @@
 
 <table id="datatable">
     <tr><th><td>Prix unitaire</td></th></tr>
-	<tr><th  t-foreach="doc.order_line" t-as="l"><td><span t-esc="l.price_unit"/></td></th></tr>
+	<tr><th  t-foreach="doc.order_line" t-as="l"><td t-esc="l.price_unit"></td></th></tr>
 
 </table>
 			</div>
