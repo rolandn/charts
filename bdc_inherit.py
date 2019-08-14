@@ -6,16 +6,20 @@ from openerp import models, fields, api, exceptions
 from openerp.exceptions import Warning
 
 
-
-
 class Sale(models.Model):
     _inherit = ['sale.order']
+
+    rapport_url = fields.Char(compute="_rapport_url", string="Lien vers le rapport dynamique", required=False)
+
+    @api.model
+    @api.depends('id')
+    def _rapport_url(self):
+        for order in self:
+            order.rapport_url = "http://192.168.232.43:8069/report/html/sale.report_saleorder/{id}".format(id=order.id)
 
 
 class SaleOrder(models.Model):
     _inherit = ['sale.order.line']
-
-
 
 class ParticularReport(models.AbstractModel):
     _name = 'report.charts.report_sale_order_inherit'
