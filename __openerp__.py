@@ -18,7 +18,8 @@
     # any module necessary for this one to work correctly
     'depends': ['sale'],
 
-    'data': ['report/report_sale_order_inherit.xml'],
+    'data': ['report/report_sale_order_inherit.xml',
+             'sale_order_form_inherited.xml'],
 
 }
 
