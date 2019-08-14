@@ -9,7 +9,7 @@ from openerp.exceptions import Warning
 class Sale(models.Model):
     _inherit = ['sale.order']
 
-    rapport_url = fields.Char(compute="_rapport_url", string="Lien vers le rapport dynamique", required=False)
+    rapport_url = fields.Char(compute='_rapport_url', string="Lien vers le rapport dynamique", required=False)
 
     @api.model
     @api.depends('id')
